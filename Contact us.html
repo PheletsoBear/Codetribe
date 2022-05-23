@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Styling.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <table class="table1">
+            <tr>
+
+                <td style="width: 50%;">
+
+
+                    <img id="logo" src="./Accessories/images/log.png" style="border: double;">
+
+                </td>
+                <td>
+                    <nav align="right">
+                        <a class="links" href="./index.html">Home</a>
+                        <a class="links" href="./About me.html">About me</a>
+                        <a class="links" href="#">Contact us</a>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </nav>
+
+                </td>
+
+            </tr>
+        </table>
+    </header>
+    <main>
+
+
+
+        <main>
+            <div id="form-div">
+                <form name="MyForm" action="https://formspree.io/f/xknyynqq"  method="post" name="submit">
+                    <ul>
+                            
+                        <li>  <label for="fname">First Name</label><br>
+                            <input type="text" placeholder="Name" name="Name">
+                         </li>
+                        <li> <label for="fname"> Surname</label><br>
+                            <input type="text" placeholder="Surname" name="Surname">
+                        </li>
+                        <li> <label for="fname">Email</label><br>
+                            <input type="email" placeholder="Email" name="email">
+                        </li>
+
+                        <li> <label for="fname">Province</label><br>
+                            <input type="text" placeholder="Province" name="Province">
+                        </li>
+                        <li> <label for="fname">Town</label><br>
+                            <input type="text" placeholder="Town" name="Town">
+                        </li>
+                        
+                            <textarea placeholder="leave a comment" id="comment"></textarea>
+                        </li>
+
+                        <li><button type="button" value="submit" id="button" onclick="myClick()"><b>submit</b></button></li>
+                    </ul>
+
+                </form>
+                <script>
+                    //create a finction 
+                    function myClick() {
+            
+                        //Declare and assign the textbox variables
+                        var Name =register.Name.value;
+                        var Surname =register.Surname.value;
+                        var email =register.email.value;
+                        var Province =register.Province.value;
+                        var Town =register.Town.value;
+                        var comment =register.comment.value;
+                        document.getElementById('comment').value;
+            
+                        //Create the alert message
+                        if (Name == "") {
+                            alert('Please Enter the Name');
+                            return false;
+                        } else if (Surname == "") {
+                            alert('Please Enter Surname');
+                            return false;
+                        } else if (email == "") {
+                            alert('Enter Email');
+                            return false;
+                        } else if (Province == "") {
+                            alert('Enter Province');
+                            return false;
+                        } else if (Town == "") {
+                            alert('Please Enter Town');
+                            return false;
+            
+                        }
+            
+                    }
+                </script>
+            </div>
+
+
+        </main>
+
+    </main>
+   
+    
+
+
+
+</body>
+
+</html>
